@@ -1,3 +1,4 @@
+/*
 package com.example.springbootdemo.service.impl;
 
 import com.example.springbootdemo.config.DelayedRabbitMQConfig;
@@ -17,11 +18,13 @@ import java.util.Date;
 
 @Component
 public class RabbitmqReceiver {
-    /*@RabbitListener(queues = RabbitmqConfig.SIMPLE_QUEUE)
+    */
+/*@RabbitListener(queues = RabbitmqConfig.SIMPLE_QUEUE)
     public void simpleReceive(String message, Channel channel) throws IOException {
         System.out.println("接收消息:" + message);
         channel.basicAck(1L, false);
-    }*/
+    }*//*
+
 
     @RabbitListener(queues = RabbitmqConfig.PS_QUEUE_1)
     public void psReceive1(String message) {
@@ -61,3 +64,4 @@ public class RabbitmqReceiver {
         channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
     }
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package com.example.springbootdemo.service.impl;
 
 import com.example.springbootdemo.config.DelayedRabbitMQConfig;
@@ -26,9 +27,11 @@ public class RabbitmqSender {
         //rabbitTemplate.setReturnsCallback(new ReturnsCallBackHandler());
     }
 
-    /**
+    */
+/**
      * 简单模式发送
-     */
+     *//*
+
     public void simpleSend(String message) {
         CorrelationData correlationData = new CorrelationData(UUID.randomUUID().toString());//消息唯一标识
         MessageProperties messageProperties = new MessageProperties();
@@ -38,32 +41,40 @@ public class RabbitmqSender {
         this.rabbitTemplate.convertAndSend(RabbitmqConfig.SIMPLE_QUEUE, msg, correlationData);
     }
 
-    /**
+    */
+/**
      * 发布/订阅模式发送
-     */
+     *//*
+
     public void psSend(String message) {
         CorrelationData correlationData = new CorrelationData(UUID.randomUUID().toString());//消息唯一标识
         this.rabbitTemplate.convertAndSend(RabbitmqConfig.FANOUT_EXCHANGE, "", message, correlationData);
     }
 
-    /**
+    */
+/**
      * 路由模式发送
-     */
+     *//*
+
     public void routingSend(String routingKey, String message) {
         CorrelationData correlationData = new CorrelationData(UUID.randomUUID().toString());//消息唯一标识
         this.rabbitTemplate.convertAndSend(RabbitmqConfig.DIRECT_EXCHANGE, routingKey, message, correlationData);
     }
 
-    /**
+    */
+/**
      * 主题模式发送
-     */
+     *//*
+
     public void topicSend(String routingKey, String message) {
         this.rabbitTemplate.convertAndSend(RabbitmqConfig.TOPIC_EXCHANGE, routingKey, message);
     }
 
-    /**
+    */
+/**
      * 延迟发送
-     */
+     *//*
+
     public void delaySend(String routingKey, String message, Integer delayTime) {
         System.out.println(new Date().toString() + ">>发送延时消息：" + message);
         CorrelationData correlationData = new CorrelationData(UUID.randomUUID().toString());//消息唯一标识
@@ -74,3 +85,4 @@ public class RabbitmqSender {
         this.rabbitTemplate.convertAndSend(DelayedRabbitMQConfig.DELAYED_EXCHANGE, routingKey, msg, correlationData);
     }
 }
+*/

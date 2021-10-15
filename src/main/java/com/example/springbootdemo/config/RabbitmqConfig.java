@@ -1,3 +1,4 @@
+/*
 package com.example.springbootdemo.config;
 
 import org.springframework.amqp.core.*;
@@ -133,3 +134,4 @@ public class RabbitmqConfig {
         return BindingBuilder.bind(topicQueueColorAll()).to(topicExchange()).with(TOPIC_COLOR_ALL);
     }
 }
+*/

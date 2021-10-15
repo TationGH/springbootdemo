@@ -1,3 +1,4 @@
+/*
 package com.example.springbootdemo;
 
 import com.example.springbootdemo.service.impl.RabbitmqSender;
@@ -55,4 +56,4 @@ public class RabbitmqTest {
         this.rabbitmqSender.delaySend("delay.key", "Hello World !", 3000);
         Thread.sleep(10000);//间隔1秒发送一次消息
     }
-}
+}*/

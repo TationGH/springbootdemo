@@ -1,3 +1,4 @@
+/*
 package com.example.springbootdemo.config;
 
 import org.springframework.amqp.core.Binding;
@@ -34,4 +35,4 @@ public class DelayedRabbitMQConfig {
                                  @Qualifier("delayExchange") CustomExchange customExchange) {
         return BindingBuilder.bind(queue).to(customExchange).with(DELAYED_ROUTING_KEY).noargs();
     }
-}
+}*/

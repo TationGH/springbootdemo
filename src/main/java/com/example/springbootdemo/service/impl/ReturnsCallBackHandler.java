@@ -1,3 +1,4 @@
+/*
 package com.example.springbootdemo.service.impl;
 
 import org.springframework.amqp.core.Message;
@@ -14,3 +15,4 @@ public class ReturnsCallBackHandler implements RabbitTemplate.ReturnsCallback {
         System.out.println("错误原因：" + rtMsg.getReplyText());
     }
 }
+*/

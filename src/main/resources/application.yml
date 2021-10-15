@@ -1,14 +1,25 @@
 server:
   port: 8080
 spring:
-  rabbitmq:
+  redis:
     host: 127.0.0.1
-    port: 5672
-    username: guest
-    password: guest
-    #publisher-confirm-type: correlated
-    #publisher-returns: true
-    listener:
-      simple:
-        acknowledge-mode: manual
-        default-requeue-rejected: false #拒绝的消息是否被重新放回队列
+    port: 6379
+    timeout: 20000 #连接超时时间（毫秒）
+    password: #密码
+    pool:
+      minIdle: 1 #最小空闲连接
+      maxIdle: 10 #最大空闲连接
+      maxWait: 3 #最大阻塞等待时间（使用负值表示没有限制）
+      maxActive: 8 #最大连接数（使用负值表示没有限制）
+#spring:
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: guest
+#    password: guest
+#    #publisher-confirm-type: correlated
+#    #publisher-returns: true
+#    listener:
+#      simple:
+#        acknowledge-mode: manual
+#        default-requeue-rejected: false #拒绝的消息是否被重新放回队列

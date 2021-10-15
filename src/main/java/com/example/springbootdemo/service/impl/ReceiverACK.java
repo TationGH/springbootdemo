@@ -1,3 +1,4 @@
+/*
 package com.example.springbootdemo.service.impl;
 
 import com.example.springbootdemo.config.RabbitmqConfig;
@@ -38,3 +39,4 @@ public class ReceiverACK {
         }
     }
 }
+*/
