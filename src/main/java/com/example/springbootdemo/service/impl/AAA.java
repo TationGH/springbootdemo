@@ -1,3 +1,4 @@
+/*
 package com.example.springbootdemo.service.impl;
 
 import com.example.springbootdemo.config.RabbitmqConfig;
@@ -16,4 +17,4 @@ public class AAA {
         System.out.println("basicReject：重复消息，失败确认且抛弃消息");
         channel.basicReject(message.getMessageProperties().getDeliveryTag(), false); //失败确认
     }
-}
+}*/
